@@ -1,0 +1,28 @@
+@import '_mixins';
+
+@media (min-width:993px) {
+  .wrapper {
+    width: 100%;
+    //height: auto;
+    margin: 0 auto;
+    @include flex-column;
+  }
+}
+
+@media (min-width:481px) and (max-width:992px) {
+  .wrapper {
+    width: 100%;
+    //height: auto;
+    margin: 0 auto;
+    @include flex-column;
+  }
+}
+
+@media (min-width:320px) and (max-width:480px) {
+  .wrapper {
+    width: 100%;
+    //height: auto;
+    margin: 0 auto;
+    @include flex-column;
+  }
+}

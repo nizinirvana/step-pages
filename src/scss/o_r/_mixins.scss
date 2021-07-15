@@ -1,0 +1,91 @@
+@import "_variables";
+
+@mixin space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin space-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin background {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@mixin background-center {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@mixin background-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+@mixin grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+@mixin grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin top-button {
+  @media (min-width: 993px) {
+    width: 145px;
+    height: 37px;
+    font-size: 16px;
+  }
+  @media (min-width: 481px) and (max-width: 992px) {
+    width: 145px;
+    height: 37px;
+    font-size: 16px;
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 145px;
+    height: 37px;
+    font-size: 16px;
+  }
+}
+
+@mixin people_cont_line {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  background: $color-dark-grey1;
+}
+
+@mixin btn {
+  background: $color-light-grey;
+  color: $color-white;
+  border-radius: 40px;
+  font-weight: bold;
+  font-family: $font-mon;
+  border: 2px solid $color-light-grey;
+}
+@mixin btn-hover {
+  background-color: $color-white;
+  color: $color-light-grey;
+}

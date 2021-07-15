@@ -1,0 +1,151 @@
+@import "_mixins";
+@import "_variables";
+@import "font";
+
+@media (min-width: 993px) {
+  .people-container {
+    background-image: url("../img/o_r/background/testmonials-bg1.png");
+    height: 769px;
+    @include background-cover;
+    align-items: center;
+  }
+  .people-heading {
+    margin-top: 108px;
+    color: $color-white;
+    font-family: $font-mon;
+    font-size: 48px;
+  }
+  .list-company {
+    @include grid;
+    margin: 81px 80px 0;
+    grid-gap: 43px;
+  }
+  .list-company-item {
+    color: $color-white;
+    text-align: center;
+  }
+
+  .list-company-text {
+    font-family: $font-lato;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 29px;
+  }
+  .people-container-text {
+    position: relative;
+    width: 887px;
+    text-align: center;
+    font-size: 14px;
+    font-family: $font-lato;
+    color: $color-rose-grey;
+    margin-top: 103px;
+  }
+  .people-container-text::after {
+    @include people_cont_line;
+    width: 728px;
+    left: calc(15% - 50px);
+    margin-top: 18px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+  .people-container {
+    //width: 100%;
+    background-image: url("../img/o_r/background/testmonials-bg1.png");
+    height: 882px;
+    @include background-cover;
+    align-items: center;
+  }
+  .people-heading {
+    margin-top: 86px;
+    font-family: $font-mon;
+    color: $color-white;
+    font-size: 42px;
+    text-align: center;
+  }
+  .list-company {
+    @include grid1;
+    margin-top: 85px;
+    grid-gap: 43px;
+  }
+  .list-company-item {
+    color: $color-white;
+    text-align: center;
+  }
+  .list-company-text {
+    line-height: 24px;
+    margin-top: 22px;
+    padding: 0 3px;
+  }
+  .people-container-text {
+    position: relative;
+    width: 704px;
+    text-align: center;
+    font-size: 14px;
+    font-family: $font-lato;
+    color: $color-rose-grey;
+  }
+  .people-container-text::after {
+    @include people_cont_line;
+    width: 555px;
+    left: calc(15% - 50px);
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .people-container {
+    background-image: url("../img/o_r/background/testmonials-bg1.png");
+    height: 1700px;
+    @include flex-column;
+    @include background-cover;
+    margin-top: 0;
+    padding: 0 37px;
+  }
+  .people-heading {
+    margin-top: 57px;
+    text-align: center;
+    font-family: $font-mon;
+    color: $color-white;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px;
+  }
+
+  .list-company {
+    @include flex-column;
+    margin-top: 8px;
+  }
+
+  .list-company-item {
+    height: 166px;
+    color: $color-white;
+    text-align: center;
+    @include flex-column;
+    justify-content: space-between;
+    margin-top: 45px;
+  }
+
+  .list-company-text {
+    font-size: 16px;
+    font-family: $font-lato;
+    line-height: 24px;
+  }
+
+  .people-container-text {
+    position: relative;
+    width: 251px;
+    text-align: center;
+    font-size: 14px;
+    font-family: $font-lato;
+    color: $color-rose-grey;
+    line-height: 21px;
+    margin-top: 29px;
+  }
+  .people-container-text::after {
+    @include people_cont_line;
+    width: 245px;
+    left: calc(20% - 51px);
+    margin-top: 22px;
+  }
+}

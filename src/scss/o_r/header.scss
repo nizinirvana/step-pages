@@ -1,0 +1,435 @@
+@import "_mixins";
+@import "_variables";
+@import "font";
+
+@media (min-width: 993px) {
+  .header-main {
+    width: 100%;
+    position: relative;
+    background-image: url("../img/o_r/background/img1.png");
+    height: 800px;
+    @include background;
+  }
+  .top-button {
+    width: 145px;
+    height: 37px;
+    font-size: 16px;
+    @include btn;
+  }
+  .logo-img-item {
+    display: block;
+  }
+
+  .logo-text:hover {
+    color: $color-white;
+    cursor: pointer;
+  }
+
+  .top-button:hover {
+    @include btn-hover;
+  }
+
+  .header-top {
+    height: 100px;
+    @include space-around;
+    position: relative;
+  }
+  .header-element {
+    width: 1200px;
+    @include space-between;
+    padding: 0 80px;
+  }
+  .header-logo {
+    @include space-around;
+    width: 164px;
+    height: 41px;
+  }
+  .logo-text {
+    color: $color-light-grey;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: $font-lato;
+  }
+
+  .header-top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-light-grey;
+    position: absolute;
+    width: 527px;
+    font-family: $font-mon;
+  }
+
+  
+
+  .menu-item-link {
+    color: $color-light-grey;
+    font-size: 16px;
+  }
+  .menu-item-link:hover {
+    color: $color-white;
+    cursor: pointer;
+  }
+
+  .header-top-button-drop {
+    display: none;
+  }
+
+  .header-middle {
+    @include flex-column;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .header-middle > p {
+    margin-top: 19px;
+  }
+  .header-middle-title {
+    font-size: 82px;
+    font-weight: bold;
+    color: $color-white;
+    font-family: $font-mon;
+  }
+  .header-middle-desc {
+    font-size: 30px;
+    color: $color-light-grey;
+    font-family: $font-lato;
+  }
+  .header-middle-platform {
+    font-size: 16px;
+    color: $color-grey;
+    font-family: $font-mon;
+  }
+
+  .header-bottom {
+    @include flex-column;
+    position: absolute;
+    margin-top: 665px;
+  }
+
+  .header-button {
+    @include btn;
+    width: 390px;
+    height: 62px;
+    font-size: 16px;
+  }
+  .header-button:hover {
+    @include btn-hover;
+  }
+
+  .header-bottom-text {
+    text-align: center;
+    font-family: $font-mon;
+    font-size: 14px;
+    color: $color-grey;
+    margin-top: 19px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+  .header-main {
+    width: 100%;
+    position: relative;
+    background-image: url("../img/o_r/background/img1.png");
+    height: 800px;
+    @include background-center;
+  }
+  .top-button {
+    width: 145px;
+    height: 37px;
+    font-size: 16px;
+    @include btn;
+  }
+  .top-button:hover {
+    @include btn-hover;
+  }
+  .header-top {
+    height: 118px;
+    @include space-around;
+    position: relative;
+  }
+  .header-element {
+    width: 768px;
+    @include space-between;
+    padding: 0 42px;
+  }
+  .header-logo {
+    @include space-around;
+    width: 160px;
+    height: 41px;
+  }
+  .logo-text {
+    color: $color-light-grey;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: $font-lato;
+  }
+  .logo-text:hover {
+    color: $color-white;
+    cursor: pointer;
+  }
+
+  .header-top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-light-grey;
+    position: absolute;
+    width: 517px;
+    font-family: $font-mon;
+    margin: 100px 100px 0;
+    font-size: 16px;
+  }
+
+  .menu-item-link {
+    color: $color-light-grey;
+    font-size: 16px;
+  }
+  .menu-item-link:hover {
+    color: $color-white;
+    cursor: pointer;
+  }
+
+  .header-top-button-drop {
+    display: none;
+  }
+
+  .header-middle {
+    @include flex-column;
+    margin-top: 68px;
+    text-align: center;
+  }
+  .header-middle-title {
+    font-size: 72px;
+    font-weight: bold;
+    color: $color-white;
+    font-family: $font-mon;
+  }
+  .header-middle-desc {
+    font-size: 24px;
+    color: $color-light-grey;
+    margin-top: 19px;
+    font-family: $font-lato;
+  }
+  .header-middle-platform {
+    font-size: 14px;
+    color: $color-grey;
+    margin-top: 19px;
+    font-family: $font-mon;
+  }
+
+  .header-bottom {
+    @include flex-column;
+    position: absolute;
+    margin-top: 767px;
+  }
+  .header-button:hover {
+    @include btn-hover;
+  }
+  .header-bottom-text {
+    text-align: center;
+    font-family: $font-mon;
+    font-size: 14px;
+    color: $color-grey;
+    margin-top: 19px;
+  }
+  .header-button {
+    @include btn;
+    width: 390px;
+    height: 62px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .header-main {
+    width: 100%;
+    position: relative;
+    background-image: url("../img/o_r/background/img1.png");
+    @include background-center;
+    height: 718px;
+  }
+  .top-button {
+    width: 119px;
+    height: 37px;
+    font-size: 16px;
+    @include btn;
+  }
+  .top-button:hover {
+    @include btn-hover;
+  }
+  .header-top {
+    height: 118px;
+    @include space-around;
+    position: relative;
+  }
+  .header-element {
+    width: 320px;
+    @include space-between;
+  }
+  .header-logo {
+    @include space-around;
+    width: 43px;
+    height: 41px;
+    margin-left: 5px;
+  }
+
+  .logo-text {
+    display: none;
+    color: $color-light-grey;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: $font-lato;
+  }
+
+  .header-top-menu {
+    display: none;
+  }
+  .header-top-menu-drop {
+    display: flex;
+    font-family: $font-mon;
+    flex-direction: column;
+    position: absolute;
+    background-color: $color-dark-grey;
+    top: 118px;
+    left: 13px;
+    width: 292px;
+    height: 379px;
+  }
+  .menu-item {
+    width: 292px;
+    height: 88px;
+    padding: 29px 0 21px 39px;
+    border-bottom: 3px solid rgba(132, 142, 151, 0.5);
+  }
+  .menu-item-link {
+    position: relative;
+    color: $color-white;
+    font-size: 26px;
+    font-family: $font-mon;
+  }
+  .menu-item-link:active {
+    color: $color-light-grey;
+  }
+  .menu-item-link:active::after {
+    background-color: $color-light-grey;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 53px;
+    height: 8px;
+    left: -59px;
+    bottom: 8px;
+    transition: width 0.5s;
+    transform: rotate(90deg);
+  }
+  .menu-item-link:focus {
+    color: $color-light-grey;
+  }
+  .menu-item-link:focus::after {
+    background-color: $color-light-grey;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 53px;
+    height: 8px;
+    left: -59px;
+    bottom: 8px;
+    transition: width 0.5s;
+    transform: rotate(90deg);
+  }
+
+  .menu-drop {
+    width: 43px;
+    height: 43px;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .line-drop {
+    height: 3px;
+    border: 2px solid #ffff;
+    background: $color-white;
+    margin-top: 3px;
+    border-radius: 2px;
+  }
+
+  .top {
+    width: 15px;
+    margin-left: 11px;
+  }
+  .middle,
+  .bottom {
+    width: 26px;
+  }
+
+  .closed-menu {
+    position: relative;
+    width: 43px;
+    height: 43px;
+    background: rgba(0, 0, 0, 1);
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .closed-line {
+    position: absolute;
+    height: 3px;
+    border: 2px solid #ffff;
+    background: white;
+    width: 35px;
+    border-radius: 2px;
+  }
+  .left {
+    transform: rotateZ(45deg);
+  }
+  .right {
+    transform: rotateZ(-45deg);
+  }
+
+  .header-middle {
+    @include flex-column;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .header-middle-title {
+    font-size: 72px;
+    font-weight: bold;
+    color: $color-white;
+    font-family: $font-mon;
+  }
+  .header-middle-desc {
+    font-size: 24px;
+    color: $color-light-grey;
+    font-family: $font-lato;
+  }
+  .header-middle-platform {
+    font-size: 14px;
+    color: $color-grey;
+    font-family: $font-mon;
+  }
+
+  .header-bottom {
+    @include flex-column;
+    position: absolute;
+    margin-top: 696px;
+  }
+  .header-button {
+    @include btn;
+    width: 290px;
+    height: 45px;
+    font-size: 18px;
+  }
+  .header-button:hover {
+    @include btn-hover;
+  }
+  .header-bottom-text {
+    text-align: center;
+    font-family: $font-mon;
+    font-size: 14px;
+    color: $color-grey;
+    margin-top: 19px;
+  }
+}

@@ -1,0 +1,14 @@
+@mixin text-styles-montserrat {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+}
+@mixin text-styles-lato {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+}
+
+
